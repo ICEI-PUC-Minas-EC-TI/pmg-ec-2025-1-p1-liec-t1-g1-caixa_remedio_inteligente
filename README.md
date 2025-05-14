@@ -11,11 +11,12 @@
 
 ## Integrantes
 
-* Pedro Augusto Barbosa de Castro Maciel
-* João Pedro Martinez Resende
 * Ana Paula Lopes Cabral
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Guilherme Amaral Giffoni
+* João Pedro Martinez Resende
+* Luan Rangel
+* Pedro Augusto Barbosa de Castro Maciel
+* Pedro Guilherme Tirloni
 
 ## Orientador
 
