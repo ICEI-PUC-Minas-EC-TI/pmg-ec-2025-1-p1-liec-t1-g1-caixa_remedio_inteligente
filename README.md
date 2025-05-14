@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# CAIXA DE REMÉDIO INTELIGENTE
 
 `Puc Minas - Coração Eucarístico`
 
