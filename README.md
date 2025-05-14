@@ -13,7 +13,7 @@
 
 * Pedro Augusto Barbosa de Castro Maciel
 * João Pedro Martinez Resende
-* 
+* Ana Paula Lopes Cabral
 * Nome completo do aluno 4
 * Nome completo do aluno 5
 
