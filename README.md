@@ -1,29 +1,31 @@
 # TÍTULO DO PROJETO
 
-`CAMPUS/UNIDADE`
+`Puc Minas - Coração Eucarístico`
 
-`CURSO`
+`Engenharia da computação`
 
-`SEMESTRE`
+`1º semestre`
 
-`DISCIPLINA`
+`Laboratório de introdução à Engenharia da Computação`, `Algoritmos e Estruturas de Dados I`, `Introdução à Computação`
 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Pedro Augusto Barbosa de Castro Maciel
+* João Pedro Martinez Resende
+* 
 * Nome completo do aluno 4
 * Nome completo do aluno 5
 
 ## Orientador
 
-* Nome completo do professor 1
+* Felipe Augusto Lara Soares
+* Sandro Jerônimo de Almeida
+* Naísses Zóia Lima
 
 ## Resumo
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto consiste em uma caixa de remédio inteligente, desenvolvida para auxiliar idosos e pessoas que têm dificuldade de lembrar os horários de seus medicamentos. A proposta busca tornar a rotina mais prática e segura, por meio de alertas automatizados. O sistema utiliza ESP32 programado em C, e conta com um aplicativo desenvolvido no MIT App Inventor para facilitar a interação com o usuário.
 
 # Código (do arduino ou esp32)
 
