@@ -14,7 +14,7 @@
 * Ana Paula Lopes Cabral
 * Guilherme Amaral Giffoni
 * João Pedro Martinez Resende
-* Luan Rangel
+* Luan Victor Sant' Ana Rangel
 * Pedro Augusto Barbosa de Castro Maciel
 * Pedro Guilherme Tirloni
 
