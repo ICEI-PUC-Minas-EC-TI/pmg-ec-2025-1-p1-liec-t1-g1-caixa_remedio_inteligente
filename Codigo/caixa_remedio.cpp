@@ -72,11 +72,17 @@ class Compartimento {
 };
 
 void fechaCompartimentosAbertos(Compartimento vetComp[]);
-void checaBotoes(Compartimento vetComp[]);
+void processaBotoesCompartimentos(Compartimento vetComp[]);
 
 Compartimento comps[nComp];
+BluetoothSerial SerialBT;
 
 void setup() {
+    Serial.begin(9600);
+
+    SerialBT.begin("Caixa de Remédio");
+    Serial.println("Pronto para parear!");
+
     pinMode(buzzer, OUTPUT);
 
     comps[0] = Compartimento(botao1, led1, servo1);
@@ -87,7 +93,7 @@ void setup() {
 }
 
 void loop() {
-    checaBotoes(comps);
+    processaBotoesCompartimentos(comps);
     delay(20);
 }
 
@@ -100,7 +106,7 @@ void fechaCompartimentosAbertos(Compartimento vetComp[]) {
     }
 }
 
-void checaBotoes(Compartimento vetComp[]) {
+void processaBotoesCompartimentos(Compartimento vetComp[]) {
     for (int i = 0; i < nComp; i++) {
         if (digitalRead(vetComp[i].botao) == HIGH) {
             if (!vetComp[i].pressionado) {
