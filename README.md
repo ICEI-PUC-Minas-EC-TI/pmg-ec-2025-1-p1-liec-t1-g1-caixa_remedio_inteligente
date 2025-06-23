@@ -16,7 +16,6 @@
 * João Pedro Martinez Resende
 * Luan Victor Sant' Ana Rangel
 * Pedro Augusto Barbosa de Castro Maciel
-* Pedro Guilherme Tirloni
 
 ## Orientador
 
