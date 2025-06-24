@@ -19,6 +19,7 @@ Nosso projeto pretende mitigar o risco de não adesão ao simplificar a rotina: 
 ## Objetivos
 
 **Objetivo geral**
+
 Conceber e prototipar uma solução de baixo custo que integre ESP32, servo-motor e aplicativo App Inventor via Bluetooth, permitindo ao usuário programar, receber alerta e liberar a caixa de medicamentos de forma segura e intuitiva.
 
 **Objetivos específicos**
