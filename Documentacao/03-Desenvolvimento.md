@@ -26,7 +26,10 @@ Os materiais utilizados no projeto foram:
 O desenvolvimento da Caixa de Remédio Inteligente foi dividido em etapas específicas, contemplando a criação do aplicativo, montagem do hardware e a integração entre ambas as partes.
 
 ## Desenvolvimento do Aplicativo
-**Interface**
+
+**Código**
+
+### Interface
 
 A interface do aplicativo foi criada com o objetivo de ser simples, acessível e funcional, utilizando a plataforma MIT App Inventor. O layout apresenta:
 
@@ -36,7 +39,7 @@ A interface do aplicativo foi criada com o objetivo de ser simples, acessível e
 
 Todos os botões são bem posicionados, de fácil compreensão, e otimizados para atender usuários com diversos níveis de familiaridade com tecnologia.
 
-**Código**
+### Código
 
 O código do aplicativo foi desenvolvido por meio da lógica de blocos do App Inventor. Cada botão está associado a comandos que são enviados via Bluetooth ao ESP32, sendo esses comandos interpretados como instruções específicas:
 
@@ -48,13 +51,6 @@ O código do aplicativo foi desenvolvido por meio da lógica de blocos do App In
 
 A estrutura do código garante estabilidade e baixo risco de falhas durante a transmissão dos comandos.
 
-### Interface
-
-Descreva o desenvolvimento das telas do aplicativo.
-
-### Código
-
-Descreva o desenvolvimento do código do aplicativo.
 
 ## Desenvolvimento do Hardware
 
