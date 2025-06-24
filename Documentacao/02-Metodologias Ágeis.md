@@ -7,16 +7,16 @@ Para o desenvolvimento da Caixa de Remédio Inteligente, o grupo adotou a metodo
 
 ### Fases do Projeto Segundo a Metodologia Scrum
 
-Planejamento e Priorização:
+**Planejamento e Priorização:**
 As atividades foram organizadas e priorizadas com base em sua importância e complexidade. Foram definidas categorias para as tarefas — fáceis, médias e difíceis — o que facilitou a gestão do tempo e dos recursos. Etapas cruciais como a compra de materiais, a definição da estrutura da caixa e o início do desenvolvimento do hardware foram tratadas como prioridade inicial.
 
-Sprints e Execução:
+**Sprints e Execução:**
 O desenvolvimento foi dividido em sprints definidos pelo cronograma fornecido pelo professor. Isso permitiu que o grupo tivesse uma visão clara do tempo disponível e das metas de cada ciclo. Ao final de cada sprint, os resultados eram avaliados para definir os próximos passos com base na evolução do projeto.
 
-Adaptação e Replanejamento:
+**Adaptação e Replanejamento:**
 Durante o processo, o grupo precisou adaptar o planejamento inicial. A proposta original de impressão 3D da caixa foi substituída por um material mais acessível, devido à indisponibilidade da impressora. A metodologia ágil permitiu essa mudança sem comprometer o andamento geral do projeto.
 
-Finalização e Testes:
+**Finalização e Testes:**
 Na fase final, foram realizados testes de funcionamento do hardware e do aplicativo, assim como a documentação completa do projeto no GitHub. A etapa de testes foi essencial para validar as funcionalidades e corrigir possíveis falhas antes da entrega final.
 
 ### Divisão de Papéis
