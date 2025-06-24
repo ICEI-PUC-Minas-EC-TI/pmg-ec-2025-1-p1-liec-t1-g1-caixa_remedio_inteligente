@@ -22,18 +22,23 @@ Na fase final, foram realizados testes de funcionamento do hardware e do aplicat
 ### Divisão de Papéis
 
 - **Pedro Augusto Barbosa de Castro Maciel**
+
 Scrum Master, responsável pela documentação no GitHub, coordenação geral do projeto e atualização constante do quadro Scrum.
 
 - **Ana Paula Lopes Cabral**
+
 Responsável pelo desenvolvimento do aplicativo no App Inventor, incluindo interface e funcionalidade dos botões.
 
 - **Guilherme Amaral Giffoni**
+
 Responsável pela programação do ESP32, organização da divisão de tarefas e montagem do hardware (protoboard, resistores, jumpers). Também participou da integração do hardware à estrutura física da caixa.
 
 - **João Pedro Martinez Resende**
+
 Responsável pelo desenvolvimento da estrutura física da caixa de remédios e pela integração do hardware ao protótipo.
 
 - **Luan Victor Sant’Ana Rangel**
+
 Atuou como testador, realizando verificações do aplicativo, análise da documentação e propondo melhorias funcionais. Responsável pelas validações durante as etapas de revisão dentro do Scrum.
 
 ### Processo
