@@ -78,4 +78,6 @@ O controle das ações se dá com base em condições simples, garantindo que ca
 
 ## Comunicação entre App e Hardware
 
-Descreva como foi o processo de comunicação entre App e arduino/ESP.
+A comunicação entre o aplicativo e o microcontrolador ESP32 ocorre via Bluetooth, de forma estável e contínua. No App Inventor, foi utilizada a funcionalidade nativa de Bluetooth para se conectar ao dispositivo, com blocos que enviam strings específicas quando os botões são acionados.
+
+No ESP32, a biblioteca BluetoothSerial foi utilizada para escutar essas mensagens e converter os comandos em ações físicas, como o movimento do servo motor, o acionamento do buzzer ou a sinalização com o LED. Esse processo torna a comunicação eficiente e de fácil replicação.
