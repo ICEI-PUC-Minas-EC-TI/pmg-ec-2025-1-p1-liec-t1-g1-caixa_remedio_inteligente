@@ -35,14 +35,15 @@ A interface do aplicativo foi criada com o objetivo de ser simples, acessível e
 
 Todos os botões são bem posicionados, de fácil compreensão, e otimizados para atender usuários com diversos níveis de familiaridade com tecnologia.
 
-Código
+**Código**
+
 O código do aplicativo foi desenvolvido por meio da lógica de blocos do App Inventor. Cada botão está associado a comandos que são enviados via Bluetooth ao ESP32, sendo esses comandos interpretados como instruções específicas:
 
-Abrir a tampa;
+- Abrir a tampa;
 
-Ativar o buzzer e o LED;
+- Ativar o buzzer e o LED;
 
-Encerrar o alarme.
+- Encerrar o alarme.
 
 A estrutura do código garante estabilidade e baixo risco de falhas durante a transmissão dos comandos.
 
