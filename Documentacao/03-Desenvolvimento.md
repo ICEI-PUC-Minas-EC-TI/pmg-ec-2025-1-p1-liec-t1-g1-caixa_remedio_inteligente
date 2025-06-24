@@ -54,11 +54,27 @@ A estrutura do código garante estabilidade e baixo risco de falhas durante a tr
 
 ### Montagem
 
-Descreva como foi o processo da montagem do projeto.
+A montagem do hardware foi realizada de forma progressiva:
+
+1. Organização da protoboard com o ESP32, servo motor, buzzer, LED e resistores.
+
+2. Conexão dos componentes utilizando jumpers, de acordo com os pinos de controle definidos no código.
+
+3. Execução de testes preliminares por meio do Tinkercad, simulando a montagem antes da execução física.
+
+4. Fixação do conjunto eletrônico à caixa feita em papel resistente, adaptando-se às limitações técnicas do momento.
+
+Embora a proposta inicial envolvesse um modelo impresso em 3D, a equipe optou pela versão manual devido à indisponibilidade da impressora 3D no laboratório da faculdade.
 
 ### Desenvolvimento do Código
 
-Descreva como foi o desenvolvimento do código do arduino/ESP.
+O código foi implementado na Arduino IDE, utilizando as bibliotecas BluetoothSerial e ESP32Servo. A estrutura geral é composta por:
+
+- Setup: inicialização da comunicação serial, configuração dos pinos e preparação do servo motor.
+
+- Loop principal: leitura dos comandos Bluetooth e execução das ações conforme os dados recebidos.
+
+O controle das ações se dá com base em condições simples, garantindo que cada instrução enviada pelo aplicativo resulte em uma resposta direta e confiável por parte do ESP32.
 
 ## Comunicação entre App e Hardware
 
