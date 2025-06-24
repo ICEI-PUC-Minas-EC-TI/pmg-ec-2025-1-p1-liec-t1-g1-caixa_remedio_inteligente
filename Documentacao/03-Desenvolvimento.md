@@ -27,8 +27,6 @@ O desenvolvimento da Caixa de Remédio Inteligente foi dividido em etapas espec�
 
 ## Desenvolvimento do Aplicativo
 
-**Código**
-
 ### Interface
 
 A interface do aplicativo foi criada com o objetivo de ser simples, acessível e funcional, utilizando a plataforma MIT App Inventor. O layout apresenta:
