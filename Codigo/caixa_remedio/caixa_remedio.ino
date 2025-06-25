@@ -34,6 +34,7 @@ void loop() {
   delay(25);
 }
 
+// função responsável por tratar do I/O e agir como controle dos compartimentos
 void processaBotoesCompartimentos(Compartimento **vetComp) {
   for (int i = 0; i < nComp; i++) {
     if (vetComp[i]->estadoBotao()) {

@@ -20,6 +20,7 @@ bool Compartimento::estadoBotao() {
   return digitalRead(this->pinoBotao);
 }
 
+// Atualiza os estados dos atributos da classe, assim como abrir/fechar a tampa
 // modo = 1 -> abre a tampa e liga o LED
 // modo = 0 -> fecha a tampa e desliga o LED
 void Compartimento::controlaCompartimento(unsigned modo) {
@@ -48,6 +49,8 @@ void Compartimento::fechaTampa() {
   }
 }
 
+// método estático para fechar todos os compartimentos, é utilizado
+// principalmente para manter apenas um compartimento aberto
 void Compartimento::fechaTodos(Compartimento **vetComp, int qtdCompartimento) {
   for (int i = 0; i < qtdCompartimento; i++) {
     if (vetComp[i]->tampaAberta) {
@@ -57,6 +60,7 @@ void Compartimento::fechaTodos(Compartimento **vetComp, int qtdCompartimento) {
   }
 }
 
+// método estático para abrir apenas um compartimento por vez
 void Compartimento::abreIndividual(Compartimento **vetComp, Compartimento *comp, int qtdCompartimento) {
   if (comp->tampaAberta) {
     comp->controlaCompartimento(0);
