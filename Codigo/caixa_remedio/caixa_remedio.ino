@@ -1,3 +1,18 @@
+/*
+  Projeto da caixa de remédio automática, que avisa o usuário o horário de tomar
+  o medicamento, com feedback visual e sonoro.
+
+  Integrantes:
+  -  Ana Paula Lopes Cabral
+  -  Guilherme Amaral Giffoni
+  -  João Pedro Martinez Resende
+  -  Luan Victor Sant' Ana Rangel
+  -  Pedro Augusto Barbosa de Castro Maciel
+
+  URL GIT:
+  https://github.com/ICEI-PUC-Minas-EC-TI/pmg-ec-2025-1-p1-liec-t1-g1-caixa_remedio_inteligente
+*/
+
 #define nComp 3
 
 #define buzzer 4
