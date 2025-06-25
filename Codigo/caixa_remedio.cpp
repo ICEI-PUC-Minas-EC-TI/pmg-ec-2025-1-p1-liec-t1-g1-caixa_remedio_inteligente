@@ -2,19 +2,19 @@
 
 #define nComp 3
 
-#define buzzer 6
+#define buzzer 27
 
-#define led1 13
-#define led2 12
-#define led3 8
+#define led1 4
+#define led2 18
+#define led3 19
 
-#define botao1 2
-#define botao2 4
-#define botao3 7
+#define botao1 27
+#define botao2 26
+#define botao3 25
 
-#define servo1 11
-#define servo2 10
-#define servo3 9
+#define servo1 21
+#define servo2 22
+#define servo3 23
 
 class Compartimento {
    public:
@@ -45,12 +45,12 @@ class Compartimento {
         // modo != 1 -> fecha a tampa e desliga o LED
 
         if (modo == 1) {
-            this->servo.write(45);
+            this->abre();
             this->aberto = true;
 
             digitalWrite(this->led, 1);
         } else {
-            this->servo.write(0);
+            this->fecha();
             this->aberto = false;
 
             digitalWrite(this->led, 0);
@@ -74,55 +74,51 @@ class Compartimento {
 void fechaCompartimentosAbertos(Compartimento vetComp[]);
 void processaBotoesCompartimentos(Compartimento vetComp[]);
 
-Compartimento comps[nComp];
-BluetoothSerial SerialBT;
+Compartimento *vetCompartimento[nComp];
 
 void setup() {
     Serial.begin(9600);
-
-    SerialBT.begin("Caixa de Remédio");
-    Serial.println("Pronto para parear!");
-
     pinMode(buzzer, OUTPUT);
 
-    comps[0] = Compartimento(botao1, led1, servo1);
-    comps[1] = Compartimento(botao2, led2, servo2);
-    comps[2] = Compartimento(botao3, led3, servo3);
+    vetCompartimento[0] = new Compartimento(botao1, led1, servo1);
+    vetCompartimento[1] = new Compartimento(botao2, led2, servo2);
+    vetCompartimento[2] = new Compartimento(botao3, led3, servo3);
 
     tone(buzzer, 440, 200);
 }
 
 void loop() {
-    processaBotoesCompartimentos(comps);
-    delay(20);
+         processaBotoesCompartimentos(vetCompartimento);
+         delay(100);
+    }
 }
 
-void fechaCompartimentosAbertos(Compartimento vetComp[]) {
+void fechaCompartimentosAbertos(Compartimento **vetComp) {
     for (int i = 0; i < nComp; i++) {
-        if (vetComp[i].aberto) {
-            vetComp[i].controlaCompartimento(0);
+        if (vetComp[i]->aberto) {
+            vetComp[i]->controlaCompartimento(0);
             delay(300);
         }
     }
 }
 
-void processaBotoesCompartimentos(Compartimento vetComp[]) {
+void processaBotoesCompartimentos(Compartimento **vetComp) {
     for (int i = 0; i < nComp; i++) {
-        if (digitalRead(vetComp[i].botao) == HIGH) {
-            if (!vetComp[i].pressionado) {
-                vetComp[i].pressionado = true;
+        if (digitalRead(vetComp[i]->botao) == HIGH) {
+            if (!vetComp[i]->pressionado) {
+                vetComp[i]->pressionado = true;
 
-                if (vetComp[i].aberto) {
-                    vetComp[i].fecha();
+                if (vetComp[i]->aberto) {
+                    vetComp[i]->fecha();
                     break;
                 } else {
                     fechaCompartimentosAbertos(vetComp);
 
-                    vetComp[i].abre();
+                    vetComp[i]->abre();
                 }
             }
         } else {
-            vetComp[i].pressionado = false;
+            vetComp[i]->pressionado = false;
         }
     }
 }
