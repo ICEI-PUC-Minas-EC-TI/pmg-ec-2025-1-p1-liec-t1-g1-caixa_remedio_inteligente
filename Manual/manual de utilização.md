@@ -4,7 +4,7 @@
 ### 1. Ligação e Alimentação
 
 - Conecte o cabo USB ao ESP32 e a uma fonte de energia (computador ou carregador USB).  
-- Aguarde a inicialização do sistema.
+- Aguarde o bipe do buzzer.
 
 ### 2. Conexão com o Aplicativo
 
@@ -14,10 +14,10 @@
 
 ### 3. Programação do Alarme
 
-- Pressione o botão **"Definir Horário"** para escolher o horário em que a caixa deve abrir.  
+- Pressione o botão **"Adicionar Alarme"** para escolher o horário em que a caixa deve abrir.  
 - No horário programado, o sistema emitirá um som (buzzer), acenderá o LED e a tampa será aberta automaticamente.
 
 ### 4. Abertura Manual
 
-- Caso seja necessário abrir a caixa fora do horário programado, utilize o botão **"Abrir Agora"** no aplicativo.  
-- A tampa será acionada imediatamente.
+- Para abrir/fechar os compartimentos da caixa, o dispositivo possui três botões, cada um correspondente a um compartimento
+- Também é possível abrir/fechar os compartimentos a partir do aplicativo
